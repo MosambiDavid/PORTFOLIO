@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Mosambi Mwita | Professional Portfolio</title>
+    <meta name="description" content="Portfolio of David Mosambi Mwita, IT Student at Meru University of Science and Technology. Professional Web Developer and Tech Enthusiast.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">DM.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="name">David Mosambi</span></h1>
+                    <p>I'm a 3rd-year IT student at <strong>Meru University of Science and Technology</strong>. I build modern, user-centric digital experiences.</p>
+                    
+                    <div class="hero-btns">
+                        <a href="resume.html" class="btn btn-primary">View Resume</a>
+                        <a href="David_Mosambi_CV.doc" download="David_Mosambi_CV.doc" class="btn btn-secondary">Download CV</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/254711805560" class="social-icon" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com/mosambijnr" class="social-icon" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/mosambijr" class="social-icon" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/MosambiDavid" class="social-icon" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-img-wrapper">
+                        <img src="profile.png" alt="David Mosambi Mwita">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="info-grid">
+                    <div class="card glass">
+                        <i class="fas fa-university"></i>
+                        <h3>Education</h3>
+                        <p>Meru University of Science and Technology<br>BSc. Information Technology<br>Year 3 (Current)</p>
+                    </div>
+                    <div class="card glass">
+                        <i class="fas fa-code"></i>
+                        <h3>Passion</h3>
+                        <p>Dedicated to learning software development, system administration, and network security. Aiming to innovate in the IT landscape.</p>
+                    </div>
+                    <div class="card glass">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Contact Details</h3>
+                        <p>Email: davidmosambimwita@gmail.com<br>Phone: +254 711 805 560</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="glass" style="margin: 0 2rem; border-radius: 40px;">
+            <div class="container">
+                <h2 class="section-title">Technical <span>Skills</span></h2>
+                <div class="info-grid">
+                    <div class="card">
+                        <i class="fab fa-html5" style="color: #e34c26;"></i>
+                        <h3>Web Development</h3>
+                        <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-database" style="color: #336791;"></i>
+                        <h3>Databases</h3>
+                        <p>MySQL, SQL, Database Management Systems</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-network-wired" style="color: #4ade80;"></i>
+                        <h3>Networking</h3>
+                        <p>Network Configuration, Troubleshooting, Security Fundamentals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <div class="glass" style="max-width: 600px; margin: 0 auto; padding: 3rem; border-radius: 30px;">
+                    <form id="contactForm">
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Your Name</label>
+                            <input type="text" id="name" required style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white;">
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email Address</label>
+                            <input type="email" id="email" required style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white;">
+                        </div>
+                        <div style="margin-bottom: 2rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                            <textarea id="message" rows="5" required style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send Message</button>
+                    </form>
+                    <div id="formStatus" style="margin-top: 1.5rem; text-align: center; font-weight: 500;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 3rem 0; text-align: center; color: var(--text-dim); border-top: 1px solid var(--glass-border);">
+        <p>&copy; 2026 David Mosambi Mwita. All rights reserved.</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem;"><a href="/admin" style="color: var(--text-dim); text-decoration: none; opacity: 0.5;">Admin Dashboard</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

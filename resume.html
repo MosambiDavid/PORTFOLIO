@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - David Mosambi Mwita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #f59e0b; /* Orange Accent */
+            --text: #334155;
+            --light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text);
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .resume-container { box-shadow: none; padding: 40px; }
+            .no-print { display: none; }
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--accent);
+            margin-right: 25px;
+            flex-shrink: 0;
+        }
+
+        .header-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-left {
+            flex-grow: 1;
+        }
+
+        .header-left h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .header-left p {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            flex-shrink: 0;
+        }
+
+        .header-right a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #e2e8f0;
+            margin-left: 15px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .item-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style-type: square;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .skill-cat {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .actions {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        .btn-accent { background: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="actions no-print">
+        <a href="index.html" class="btn">Back to Portfolio</a>
+        <button onclick="window.print()" class="btn btn-accent">Download PDF / Print</button>
+    </div>
+
+    <div class="resume-container">
+        <header>
+            <div class="header-photo">
+                <img src="profile.png" alt="David Mosambi Mwita">
+            </div>
+            <div class="header-left">
+                <h1>David Mosambi Mwita</h1>
+                <p>Information Technology Student</p>
+            </div>
+            <div class="header-right">
+                <p>davidmosambimwita@gmail.com</p>
+                <p>+254 711 805 560</p>
+                <p>Meru, Kenya</p>
+                <p><a href="https://github.com/MosambiDavid">github.com/MosambiDavid</a></p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Ambitious and highly motivated 3rd-year Information Technology student at Meru University of Science and Technology. Possessing a strong foundation in software development, web technologies, and network administration. Committed to leveraging technical skills to solve complex problems and contribute to innovative IT solutions.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Bachelor of Science in Information Technology</span>
+                    <span>2023 - Present</span>
+                </div>
+                <div class="item-sub">
+                    <span>Meru University of Science and Technology</span>
+                    <span>Meru, Kenya</span>
+                </div>
+                <ul>
+                    <li>Currently in 3rd Year of study.</li>
+                    <li>Relevant Coursework: Data Structures, Database Management, Web Development, Network Security, System Analysis & Design.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <p><span class="skill-cat">Languages:</span> HTML5, CSS3, JavaScript (ES6), Basics of Python & Java</p>
+                    <p><span class="skill-cat">Web:</span> Responsive Design, Vanilla JS, CSS Flexbox/Grid</p>
+                </div>
+                <div>
+                    <p><span class="skill-cat">Databases:</span> MySQL, SQL Server</p>
+                    <p><span class="skill-cat">Tools:</span> Git, GitHub, VS Code, Cisco Packet Tracer</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Personal Portfolio Website</span>
+                    <span>2024</span>
+                </div>
+                <ul>
+                    <li>Developed a responsive portfolio using HTML, CSS, and JS to showcase academic achievements and projects.</li>
+                    <li>Integrated social media APIs and optimized for SEO.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Student Management System (Academic)</span>
+                    <span>2023</span>
+                </div>
+                <ul>
+                    <li>Designed and implemented a basic database system for managing student records using MySQL.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Social Profiles</h2>
+            <ul>
+                <li><strong>WhatsApp:</strong> 0711805560</li>
+                <li><strong>Facebook:</strong> Mosambi jnr</li>
+                <li><strong>Instagram:</strong> mosambijr</li>
+                <li><strong>GitHub:</strong> MosambiDavid</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

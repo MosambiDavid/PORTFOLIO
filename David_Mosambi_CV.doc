@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>David Mosambi Mwita - CV</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; }
+        h1 { color: #1e293b; border-bottom: 2px solid #f59e0b; padding-bottom: 10px; }
+        h2 { color: #1e293b; border-bottom: 1px solid #e2e8f0; margin-top: 20px; }
+        .contact-info { margin-bottom: 20px; font-style: italic; }
+        .section { margin-bottom: 20px; }
+        .item-header { font-weight: bold; display: flex; justify-content: space-between; }
+        ul { margin-left: 20px; }
+    </style>
+</head>
+<body>
+    <h1>David Mosambi Mwita</h1>
+    <div class="contact-info">
+        <p>Email: davidmosambimwita@gmail.com | Phone: +254 711 805 560</p>
+        <p>Location: Meru, Kenya | GitHub: github.com/MosambiDavid</p>
+    </div>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p>Ambitious and highly motivated 3rd-year Information Technology student at Meru University of Science and Technology. Possessing a strong foundation in software development, web technologies, and network administration.</p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Information Technology</strong> (2023 - Present)</p>
+        <p>Meru University of Science and Technology, Meru, Kenya</p>
+        <ul>
+            <li>Currently in 3rd Year of study.</li>
+            <li>Relevant Coursework: Data Structures, Database Management, Web Development, Network Security.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <p><strong>Languages:</strong> HTML5, CSS3, JavaScript (ES6), Basics of Python & Java</p>
+        <p><strong>Web:</strong> Responsive Design, Vanilla JS, CSS Flexbox/Grid</p>
+        <p><strong>Databases:</strong> MySQL, SQL Server</p>
+        <p><strong>Tools:</strong> Git, GitHub, VS Code, Cisco Packet Tracer</p>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <p><strong>Personal Portfolio Website</strong> (2024)</p>
+        <ul>
+            <li>Developed a responsive portfolio using HTML, CSS, and JS to showcase academic achievements.</li>
+        </ul>
+        <p><strong>Student Management System</strong> (2023)</p>
+        <ul>
+            <li>Designed and implemented a basic database system for managing student records using MySQL.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Social Profiles</h2>
+        <ul>
+            <li>WhatsApp: 0711805560</li>
+            <li>Facebook: Mosambi jnr</li>
+            <li>Instagram: mosambijr</li>
+            <li>GitHub: MosambiDavid</li>
+        </ul>
+    </div>
+</body>
+</html>
